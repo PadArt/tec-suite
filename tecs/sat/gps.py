@@ -110,7 +110,7 @@ def compute_sat_xyz(ephemeris, sec):
     u0k = tettak + w0
     uk = u0k + cuc * cos(2 * u0k) + cus * sin(2 * u0k)
 
-    rk = a0 * (1 + e0 * cos(ek)) + crc * cos(2 * u0k) + crs * sin(2 * u0k)
+    rk = a0 * (1 - e0 * cos(ek)) + crc * cos(2 * u0k) + crs * sin(2 * u0k)
 
     ik = i0 + (cic * cos(2 * u0k) + cis * sin(2 * u0k)) + i_dot * tk
 
