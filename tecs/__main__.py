@@ -361,7 +361,7 @@ def main():
                 sat_xyz[system][number][obs_date][obs_time] = None
                 eph = select_navigation_message(epoch,
                                                 system, number,
-                                                nav_message, first_msg=True)
+                                                nav_message, first_msg=False)
                 if eph is not None:
                     dt, eph = eph
 
